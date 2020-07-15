@@ -4,20 +4,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>Fizz Buzz Code | Beth Olmo</title>
+    <title>Fizz Buzz | Beth Olmo</title>
 
-    <!--  CSS -->
-    <link href="CSS/bootstrap.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link href="CSS/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" />
     <link href="CSS/cover.css" rel="stylesheet" />
     <link href="CSS/prism.css" rel="stylesheet" />
 
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
 
 </head>
 <body class="text-center">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="masthead">
+        <header class="masthead mb-auto">
             <div class="inner">
-                <h3 class="masthead-brand">Fizz Buzz</h3>
+                <h3 class="masthead-brand">Cover</h3>
                 <nav class="nav nav-masthead justify-content-center">
                     <a class="nav-link" href="\index.html">Home</a>
                     <a class="nav-link" href="\solve.html">Solve</a>
@@ -30,43 +47,21 @@
         </header>
 
         <main role="main" class="inner cover">
-            <div class="row">
-                <div class="col">
-                    <h1 class="cover-heading">Fizz Buzz: The Code</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p class="lead">Here's what makes it all happen.</p>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <pre class="line-numbers language-js">
-                            <code class="language-js">$("#submit").click(function () {
-                                let word = $("#userWord").val()
-                                $("#msg1").text(`You entered: ${word}`);
-
-                                if (word.length < 2) {
-                                alert("Please use at least 2 letters")
-                                } else {
-                                let cleanWord = word.toLowerCase().replace(/\s|\'|\"/g, '');
-                                $("#msg2").text(`C
-                            </code>
-                        </pre>
-                    </div>
-                </div>
-            </div>
-
-            
-
+            <h1 class="cover-heading">Cover your page.</h1>
+            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <p class="lead">
+                <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+            </p>
         </main>
     </div>
 
-    <script src="SCRIPTS/bootstrap.bundle.js"></script>
-    <script src="SCRIPTS/bootstrap.js"></script>
+
+    <script src="SCRIPTS/bootstrap.bundle.min.js"></script>
+    <script src="SCRIPTS/bootstrap.min.js"></script>
+    <script src="SCRIPTS/jquery.js"></script>
     <script src="SCRIPTS/prism.js"></script>
+    <script src="SCRIPTS/solve.js"></script>
+
 
 </body>
 </html>
