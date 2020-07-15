@@ -24,17 +24,43 @@
                     <a class="nav-link active" href="#">Code</a>
                     <a class="nav-link" href="https://github.com/BethOlmo06/Fizz_Buzz" target="_blank">Git</a>
                     <a class="nav-link" href="#">Blog</a>
-                    <a class="nav-link" href="https://fizzbuzz-js.netlify.app/" target="_blank">Portfolio</a>
+                    <a class="nav-link" href="https://betholmo-portfolio.netlify.app/" target="_blank">Portfolio</a>
                 </nav>
             </div>
         </header>
 
         <main role="main" class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead">
-                <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-            </p>
+            <div class="row">
+                <div class="col">
+                    <h1 class="cover-heading">Fizz Buzz: The Code</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="lead">Here's what makes it all happen.</p>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <pre class="line-numbers language-js">
+                            <code class="language-js">$("#submit").click(function () {
+                                let word = $("#userWord").val()
+                                $("#msg1").text(`You entered: ${word}`);
+
+                                if (word.length < 2) {
+                                alert("Please use at least 2 letters")
+                                } else {
+                                let cleanWord = word.toLowerCase().replace(/\s|\'|\"/g, '');
+                                $("#msg2").text(`C
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            
+
         </main>
     </div>
 
