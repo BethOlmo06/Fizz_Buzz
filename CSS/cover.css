@@ -28,6 +28,18 @@ a:hover {
     width: 100%;
 }
 
+.fizz {
+    color: orangered;
+}
+
+.buzz {
+    color: darkblue;
+}
+
+.fizzbuzz {
+    color: limegreen
+}
+
 
 /*
  * Base structure

@@ -5,7 +5,7 @@ function fizzBuzz(val1, val2) {
     /*generate numbers from 1 to 100, evaluate against values taken in
      * if new number is divisible by val1, print 'FIZZ'
      * if it's divisible by val2, print 'BIZZ'
-     * if it's divisible by both, print 'FIZZBUZZ'*/
+     * if it's divisible by both, print 'FIZZ BUZZ'*/
     for (let i = 1; i <= 100; i++) {
         returnValue += ((i % val1 == 0 ? 'FIZZ' : '') + (i % val2 == 0 ? 'BUZZ' : '') || i) + ' ';
     }
