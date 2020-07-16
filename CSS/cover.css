@@ -19,6 +19,15 @@ a:hover {
   border: .05rem solid #fff;
 }
 
+#btnCode {
+    background-color: #22c1c3;
+    color: white;
+}
+
+.elWide {
+    width: 100%;
+}
+
 
 /*
  * Base structure
