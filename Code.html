@@ -33,11 +33,43 @@
         </header>
 
         <main role="main" class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead">
-                <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-            </p>
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-black-50">Fizz Buzz: The Code</h3>
+                    <h5 class="text-black-50">Here's how it happened.</h5>
+                    <br />
+                </div>
+            </div>
+            <div class="container-fluid" id="code">
+                <div class="row">
+                    <div class="col-12">
+                        <pre class="line-numbers language-js">
+                            <code class="language-js">//take in 2 values
+                            function fizzBuzz(val1, val2) {
+                            let returnValue = "";
+
+                            //generate numbers from 1 to 100
+                            //if the new number is divisible by val1, print 'FIZZ'
+                            //if the new number is divisible by val2, print 'BUZZ'
+                            //if the new number is divisible by both, print 'FIZZBUZZ'
+                            for (let i = 1; i <= 100; i++) {
+                            returnValue += ((i % val1 == 0 ? 'FIZZ' : '') + (i % val2 == 0 ? 'BUZZ' : '') || i) + ' ';
+                            }
+                            return returnValue;
+                            }
+
+                            //display results
+                            $("#buzzIt").on('click', function buzz() {
+                            let output = '';
+                            let val1 = $("#numIn1").val();
+                            let val2 = $("#numIn2").val();
+                            output = fizzBuzz(val1, val2);
+                            $('#results').empty().append(output);
+                            });</code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer class="mastfoot mt-auto">
             <div class="inner">
