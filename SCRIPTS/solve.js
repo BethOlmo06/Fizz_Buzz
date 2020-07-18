@@ -26,18 +26,4 @@ $("#clearIt").on('click', function () {
     $("#results").text("");
 });
 
-////get the table
-//let tableBody = $("#fbBody");
-
-//tableBody.innerHTML = "";
-
-//let template = $("#fbRow");
-//let clone = template.content.cloneNode(true);
-//let columns = clone.querySelectorAll("td");
-//let columnCount = columns.length;
-
-//for (i = 1; 1 < output.length; i += columnCount) {
-//    clone = template.content.cloneNode(true);
-//    columns = clone.querySelectorAll("td");
-//}
 
