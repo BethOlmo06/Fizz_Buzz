@@ -28,7 +28,7 @@ a:hover {
     width: 100%;
 }
 
-.fizz {
+/*.fizz {
     color: orangered;
 }
 
@@ -37,7 +37,12 @@ a:hover {
 }
 
 .fizzbuzz {
-    color: limegreen
+    color: limegreen*/
+}
+
+.template-header {
+    background-color: #22c1c3;
+    color: white;
 }
 
 

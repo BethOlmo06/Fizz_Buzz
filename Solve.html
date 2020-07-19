@@ -61,10 +61,10 @@
 
                     <div class="row justify-content-center">
                         <div class="col-4">
-                            <input type="text" class="form-control numOnly" id="numIn1" value="3">
+                            <input type="text" class="form-control numOnly" id="numIn1" >
                         </div>
                         <div class="col-4">
-                            <input type="text" class="form-control numOnly" id="numIn2" value="5">
+                            <input type="text" class="form-control numOnly" id="numIn2" >
                         </div>
                         <div class="col-4">
                             <button class="btn btn-success elWide" id="buzzIt">Buzz It!</button>
@@ -74,13 +74,13 @@
 
                     <div class="row mt-xl-5">
                         <div class="col">
-                            <p id="results" class="text-black-50">
-                                <!-- Results Displayed Here -->
-                            </p>
+                            <h5 id="results" class="text-black-50"></h5>
                         </div>
+
                     </div>
                 </div>
             </div>
+        
             <div class="row mt-xl-5">
                 <div class="col-md-4 offset-4">
                     <button class="btn btn-lg btn-secondary elWide" id="clearIt">Clear</button>
@@ -93,11 +93,11 @@
                 </div>
             </div>
         </main>
-        <footer class="mastfoot mt-auto">
-            <div class="inner">
-                <!--<p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>-->
-            </div>
-        </footer>
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <!--<p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>-->
+        </div>
+    </footer>
     </div>
 
 
@@ -108,7 +108,7 @@
     <script src="SCRIPTS/solve.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
-    <script>
+    <!--<script>
         $(".numOnly").keydown(function (event) {
             // Allow backspace, tab, and delete
             if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9) {
@@ -121,7 +121,7 @@
                 }
             }
         });
-    </script>
+    </script>-->
 
 
 </body>
