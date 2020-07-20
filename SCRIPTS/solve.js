@@ -17,7 +17,6 @@ function fizzBuzz(val1, val2) {
 $(".numOnly").keydown(function (event) {
     // Allow backspace, tab, and delete
     if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9) {
-        // let it happen
     }
     else {
         // Ensure that it is a number and stop the keypress
