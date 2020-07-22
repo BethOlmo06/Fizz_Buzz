@@ -13,20 +13,6 @@ function fizzBuzz(val1, val2) {
 };
 
 
-//force valid inputs
-$(".numOnly").keydown(function (event) {
-    // Allow backspace, tab, and delete
-    if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9) {
-    }
-    else {
-        // Ensure that it is a number and stop the keypress
-        if (event.keyCode < 48 || event.keyCode > 57) {
-            Swal.fire('Please enter a whole number from 0 to 9.'), event.preventDefault();
-        }
-    }
-});
-
-
 //display results
 $("#buzzIt").on('click', function() {
     let output = '';
@@ -39,10 +25,26 @@ $("#buzzIt").on('click', function() {
 
 //clear all
 $("#clearIt").on('click', function () {
-    $("#numIn1").text("");
-    $("#numIn2").text("");
+    $("#numIn1").val("");
+    $("#numIn2").val("");
     $("#results").text("");
     
+})
+
+//force numbers only input
+$(".numOnly").keydown(function (event) {
+    let valid = false;
+    // Allow backspace, tab, and delete
+    if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9) {
+        // let it happen
+        valid = true;
+    }
+    else {
+        // Ensure that it is a number and stop the keypress
+        if (event.keyCode >= 96 && event.keyCode <= 105) {
+            valid = true;
+        }
+    }
 });
 
 
