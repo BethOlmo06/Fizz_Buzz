@@ -25,8 +25,8 @@ $("#buzzIt").on('click', function() {
 
 //clear all
 $("#clearIt").on('click', function () {
-    $("#numIn1").val("");
-    $("#numIn2").val("");
+    $("#numIn1").val("3");
+    $("#numIn2").val("5");
     $("#results").text("");
     
 })
